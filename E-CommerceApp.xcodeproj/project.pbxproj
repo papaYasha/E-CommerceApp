@@ -13,6 +13,14 @@
 		FA27F6EB28AC1E7D00B7D095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA27F6EA28AC1E7D00B7D095 /* Assets.xcassets */; };
 		FA27F6EE28AC1E7D00B7D095 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA27F6ED28AC1E7D00B7D095 /* Preview Assets.xcassets */; };
 		FA27F6F128AC1E7D00B7D095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA27F6EF28AC1E7D00B7D095 /* LaunchScreen.storyboard */; };
+		FA27F6FC28AC209200B7D095 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA27F6F928AC209200B7D095 /* Raleway-Bold.ttf */; };
+		FA27F6FD28AC209200B7D095 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA27F6FA28AC209200B7D095 /* Raleway-Regular.ttf */; };
+		FA27F6FE28AC209200B7D095 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA27F6FB28AC209200B7D095 /* Raleway-SemiBold.ttf */; };
+		FA27F70128AC217000B7D095 /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27F70028AC217000B7D095 /* OnboardingPage.swift */; };
+		FA27F70428AC221B00B7D095 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27F70328AC221B00B7D095 /* Constants.swift */; };
+		FA27F70628AC28E300B7D095 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27F70528AC28E300B7D095 /* LoginPage.swift */; };
+		FA27F70928AC291D00B7D095 /* LoginPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27F70828AC291D00B7D095 /* LoginPageViewModel.swift */; };
+		FA27F70B28AC2B8800B7D095 /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27F70A28AC2B8800B7D095 /* CustomCorners.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		FA27F6ED28AC1E7D00B7D095 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA27F6F028AC1E7D00B7D095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA27F6F228AC1E7D00B7D095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA27F6F928AC209200B7D095 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		FA27F6FA28AC209200B7D095 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		FA27F6FB28AC209200B7D095 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		FA27F70028AC217000B7D095 /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
+		FA27F70328AC221B00B7D095 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FA27F70528AC28E300B7D095 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		FA27F70828AC291D00B7D095 /* LoginPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewModel.swift; sourceTree = "<group>"; };
+		FA27F70A28AC2B8800B7D095 /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,10 @@
 		FA27F6E328AC1E7900B7D095 /* E-CommerceApp */ = {
 			isa = PBXGroup;
 			children = (
+				FA27F70728AC28F100B7D095 /* ViewModel */,
+				FA27F70228AC220900B7D095 /* Constants */,
+				FA27F6FF28AC215F00B7D095 /* View */,
+				FA27F6F828AC1FDA00B7D095 /* Fonts */,
 				FA27F6E428AC1E7900B7D095 /* AppDelegate.swift */,
 				FA27F6E628AC1E7900B7D095 /* SceneDelegate.swift */,
 				FA27F6E828AC1E7900B7D095 /* ContentView.swift */,
@@ -73,6 +93,42 @@
 				FA27F6ED28AC1E7D00B7D095 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA27F6F828AC1FDA00B7D095 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FA27F6F928AC209200B7D095 /* Raleway-Bold.ttf */,
+				FA27F6FA28AC209200B7D095 /* Raleway-Regular.ttf */,
+				FA27F6FB28AC209200B7D095 /* Raleway-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FA27F6FF28AC215F00B7D095 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA27F70028AC217000B7D095 /* OnboardingPage.swift */,
+				FA27F70528AC28E300B7D095 /* LoginPage.swift */,
+				FA27F70A28AC2B8800B7D095 /* CustomCorners.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA27F70228AC220900B7D095 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FA27F70328AC221B00B7D095 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FA27F70728AC28F100B7D095 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA27F70828AC291D00B7D095 /* LoginPageViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,8 +189,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA27F6F128AC1E7D00B7D095 /* LaunchScreen.storyboard in Resources */,
+				FA27F6FD28AC209200B7D095 /* Raleway-Regular.ttf in Resources */,
 				FA27F6EE28AC1E7D00B7D095 /* Preview Assets.xcassets in Resources */,
+				FA27F6FE28AC209200B7D095 /* Raleway-SemiBold.ttf in Resources */,
 				FA27F6EB28AC1E7D00B7D095 /* Assets.xcassets in Resources */,
+				FA27F6FC28AC209200B7D095 /* Raleway-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,9 +204,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA27F70428AC221B00B7D095 /* Constants.swift in Sources */,
 				FA27F6E528AC1E7900B7D095 /* AppDelegate.swift in Sources */,
 				FA27F6E728AC1E7900B7D095 /* SceneDelegate.swift in Sources */,
 				FA27F6E928AC1E7900B7D095 /* ContentView.swift in Sources */,
+				FA27F70628AC28E300B7D095 /* LoginPage.swift in Sources */,
+				FA27F70B28AC2B8800B7D095 /* CustomCorners.swift in Sources */,
+				FA27F70928AC291D00B7D095 /* LoginPageViewModel.swift in Sources */,
+				FA27F70128AC217000B7D095 /* OnboardingPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
