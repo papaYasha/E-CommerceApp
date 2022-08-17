@@ -8,17 +8,23 @@
 import SwiftUI
 
 struct OnboardingPage: View {
+    @State var showLoginPage: Bool = false
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text("Find your\nGadget")
                 .font(.custom(Constants.ralewayRegular, size: 55))
                 .fontWeight(.bold)
                 .foregroundColor(.white)
+            Spacer()
             Image(Constants.superHeroImage)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+            Spacer()
             Button(action: {
-                
+                withAnimation {
+                    showLoginPage = true
+                }
             }, label: {
                 Text("Get started")
                     .font(.custom(Constants.ralewayRegular, size: 18))
@@ -40,6 +46,14 @@ struct OnboardingPage: View {
         .background(
             Color(Constants.purpleColor)
                 .ignoresSafeArea()
+        )
+        .overlay(
+            Group {
+                if showLoginPage {
+                    LoginPage()
+                        .transition(.move(edge: .bottom))
+                }
+            }
         )
     }
 }
