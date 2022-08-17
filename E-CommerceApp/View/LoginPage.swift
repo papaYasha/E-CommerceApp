@@ -53,7 +53,7 @@ struct LoginPage: View {
             
             ScrollView(.vertical) {
                 VStack(spacing: 15) {
-                    Text(loginData.registerUser ? "" : "Login")
+                    Text(loginData.registerUser ? "Register" : "Login")
                         .font(.custom(Constants.ralewayRegular, size: 22).bold())
                         .frame(maxWidth: .infinity, alignment: .leading)
                     

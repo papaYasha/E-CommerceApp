@@ -13,5 +13,6 @@ struct Constants {
     
     static let purpleColor = "Purple"
     static let ralewayRegular = "Raleway-Regular"
-    static let superHeroImage = "undraw_superhero"
+    static let findGadget = "findGadget"
+    
 }

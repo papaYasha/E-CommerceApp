@@ -17,9 +17,10 @@ struct OnboardingPage: View {
                 .fontWeight(.bold)
                 .foregroundColor(.white)
             Spacer()
-            Image(Constants.superHeroImage)
+            Image(Constants.findGadget)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+                .offset(x: -10)
             Spacer()
             Button(action: {
                 withAnimation {
