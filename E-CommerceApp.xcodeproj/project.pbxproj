@@ -55,6 +55,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA025C5928B15C8B00600439 /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabViews;
+			sourceTree = "<group>";
+		};
 		FA27F6D828AC1E7900B7D095 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +117,7 @@
 		FA27F6FF28AC215F00B7D095 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FA025C5928B15C8B00600439 /* TabViews */,
 				FA27F70028AC217000B7D095 /* OnboardingPage.swift */,
 				FA27F70528AC28E300B7D095 /* LoginPage.swift */,
 				FA27F70A28AC2B8800B7D095 /* CustomCorners.swift */,
