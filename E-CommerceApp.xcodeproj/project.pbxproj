@@ -21,6 +21,7 @@
 		FA27F70628AC28E300B7D095 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27F70528AC28E300B7D095 /* LoginPage.swift */; };
 		FA27F70928AC291D00B7D095 /* LoginPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27F70828AC291D00B7D095 /* LoginPageViewModel.swift */; };
 		FA27F70B28AC2B8800B7D095 /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27F70A28AC2B8800B7D095 /* CustomCorners.swift */; };
+		FA6F06FC28B1002200E9FC19 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F06FB28B1002200E9FC19 /* MainPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		FA27F70528AC28E300B7D095 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		FA27F70828AC291D00B7D095 /* LoginPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewModel.swift; sourceTree = "<group>"; };
 		FA27F70A28AC2B8800B7D095 /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
+		FA6F06FB28B1002200E9FC19 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				FA27F70028AC217000B7D095 /* OnboardingPage.swift */,
 				FA27F70528AC28E300B7D095 /* LoginPage.swift */,
 				FA27F70A28AC2B8800B7D095 /* CustomCorners.swift */,
+				FA6F06FB28B1002200E9FC19 /* MainPage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			files = (
 				FA27F70428AC221B00B7D095 /* Constants.swift in Sources */,
 				FA27F6E528AC1E7900B7D095 /* AppDelegate.swift in Sources */,
+				FA6F06FC28B1002200E9FC19 /* MainPage.swift in Sources */,
 				FA27F6E728AC1E7900B7D095 /* SceneDelegate.swift in Sources */,
 				FA27F6E928AC1E7900B7D095 /* ContentView.swift in Sources */,
 				FA27F70628AC28E300B7D095 /* LoginPage.swift in Sources */,
