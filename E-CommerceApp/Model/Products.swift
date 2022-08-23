@@ -14,7 +14,7 @@ struct Product: Identifiable, Hashable {
     var subtitle: String
     var description: String = ""
     var price: String
-    var productName: String = ""
+    var productImage: String
     var quantity: Int = 1
 }
 
