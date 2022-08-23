@@ -33,4 +33,27 @@ class HomeViewModel: ObservableObject {
         Product(type: .tablets, title: "iPad Pro 2021", subtitle: "M1 - Black", price: "$799", productImage: "ipadPro2020"),
         Product(type: .tablets, title: "iPad Air 2019", subtitle: "i7 - White", price: "$499", productImage: "ipadAir2019"),
     ]
+    
+    @Published var filtredProducts: [Product] = []
+    
+    init() {
+        filterProductByType()
+    }
+    
+    func filterProductByType() {
+        
+        DispatchQueue.global(qos: .userInteractive).async {
+            let result = self.products
+                .lazy
+                .filter { product in
+                    return product.type == self.productType
+                }
+                .prefix(4)
+            DispatchQueue.main.async {
+                self.filtredProducts = result.compactMap({ product in
+                    return product
+                })
+            }
+        }
+    }
 }
