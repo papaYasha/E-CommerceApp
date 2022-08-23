@@ -15,4 +15,9 @@ struct Constants {
     static let ralewayRegular = "Raleway-Regular"
     static let findGadget = "findGadget"
     
+    //MARK: - Home
+    static let magnifyingglass = "magnifyingglass"
+    static let homeBackground = "HomeBG"
+    
+    
 }

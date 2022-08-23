@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainPage: View {
-    @State var currentTab: Tab = .Home
+    @State var currentTab: Tab = .home
     
     init() {
         UITabBar.appearance().isHidden = true
@@ -18,14 +18,14 @@ struct MainPage: View {
         VStack {
             TabView(selection: $currentTab) {
                 
-                Text("Home")
-                    .tag(Tab.Home)
+                Home()
+                    .tag(Tab.home)
                 Text("Liked")
-                    .tag(Tab.Liked)
+                    .tag(Tab.liked)
                 Text("Profile")
-                    .tag(Tab.Profile)
+                    .tag(Tab.profile)
                 Text("Cart")
-                    .tag(Tab.Cart)
+                    .tag(Tab.cart)
             }
             
             HStack(spacing: 0) {
@@ -39,7 +39,7 @@ struct MainPage: View {
                             .resizable()
                             .renderingMode(.template)
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 25, height: 25)
+                            .frame(width: 32, height: 25)
                             .background(
                                 Color(Constants.purpleColor)
                                     .opacity(0.1)
@@ -66,8 +66,8 @@ struct MainPage_Previews: PreviewProvider {
 }
 
 enum Tab: String, CaseIterable {
-    case Home = "Home"
-    case Profile = "Profile"
-    case Cart = "Cart"
-    case Liked = "Liked"
+    case home = "Home"
+    case profile = "Profile"
+    case cart = "Cart"
+    case liked = "Liked"
 }
