@@ -56,6 +56,7 @@ struct MainPage: View {
             .padding([.horizontal, .top])
             .padding(.bottom, 10)
         }
+        .background(Color(Constants.homeBackground).ignoresSafeArea())
     }
 }
 

@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("log_Status") var log_Status = false
+    
     var body: some View {
-//        OnboardingPage()
-        Home()
+        
+        Group {
+            if log_Status {
+                MainPage()
+            } else {
+                 OnboardingPage()
+            }
+        }
     }
 }
 

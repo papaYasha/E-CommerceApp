@@ -64,6 +64,21 @@ struct Home: View {
                     .padding(.top, 80)
                 }
                 .padding(.top, 30)
+                
+                Button {
+                    homeData.showMoreProductsOnType.toggle()
+                } label: {
+                    
+                    Label {
+                        Image(systemName: "arrow.right")
+                    } icon: {
+                        Text("see more")
+                    }
+                    .font(.custom(Constants.ralewayRegular, size: 15).bold())
+                    .foregroundColor(Color(Constants.purpleColor))
+                }
+                .frame(maxWidth: .infinity, alignment: .trailing)
+                .padding(.horizontal, 25)
             }
             .padding(.vertical)
         }
@@ -72,6 +87,9 @@ struct Home: View {
         .onChange(of: homeData.productType) { newValue in
             homeData.filterProductByType()
         }
+        .sheet(isPresented: $homeData.showMoreProductsOnType, content: {
+            MoreProductsView()
+        })
     }
     
     @ViewBuilder

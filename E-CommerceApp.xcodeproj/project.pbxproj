@@ -25,6 +25,7 @@
 		FA846AC228B4CCB8009CF6F3 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA846AC128B4CCB8009CF6F3 /* Home.swift */; };
 		FA846AC528B4D1D9009CF6F3 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA846AC428B4D1D9009CF6F3 /* Products.swift */; };
 		FA846AC728B4D4A3009CF6F3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA846AC628B4D4A3009CF6F3 /* HomeViewModel.swift */; };
+		FA846AC928B537D5009CF6F3 /* MoreProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA846AC828B537D5009CF6F3 /* MoreProductsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		FA846AC128B4CCB8009CF6F3 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		FA846AC428B4D1D9009CF6F3 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		FA846AC628B4D4A3009CF6F3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FA846AC828B537D5009CF6F3 /* MoreProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreProductsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				FA27F70528AC28E300B7D095 /* LoginPage.swift */,
 				FA27F70A28AC2B8800B7D095 /* CustomCorners.swift */,
 				FA6F06FB28B1002200E9FC19 /* MainPage.swift */,
+				FA846AC828B537D5009CF6F3 /* MoreProductsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA846AC928B537D5009CF6F3 /* MoreProductsView.swift in Sources */,
 				FA27F70428AC221B00B7D095 /* Constants.swift in Sources */,
 				FA846AC528B4D1D9009CF6F3 /* Products.swift in Sources */,
 				FA27F6E528AC1E7900B7D095 /* AppDelegate.swift in Sources */,
