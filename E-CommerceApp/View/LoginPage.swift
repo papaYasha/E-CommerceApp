@@ -78,7 +78,7 @@ struct LoginPage: View {
                     })
                     .padding(.top, 10)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    
+                        
                     Button(action: {
                         if loginData.registerUser {
                             loginData.register()

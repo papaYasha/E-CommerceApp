@@ -16,22 +16,24 @@ struct Home: View {
             
             VStack(spacing: 15) {
                 
-                HStack(spacing: 15) {
-                    Image(systemName: Constants.magnifyingglass)
-                        .font(.title2)
-                        .foregroundColor(.gray)
-                    
-                    TextField("Search", text: .constant(""))
-                        .disabled(true)
+                // SearchBar
+                ZStack {
+                    if homeData.searchActivated {
+                        searchBar()
+                    } else {
+                        searchBar()
+                            .matchedGeometryEffect(id: "SEARCHBAR", in: animation)
+                    }
                 }
-                .padding(.vertical, 12)
-                .padding(.horizontal)
-                .background(
-                    Capsule()
-                        .strokeBorder(Color.gray, lineWidth: 0.8)
-                )
+                
                 .frame(width: getScreenBound().width / 1.6)
                 .padding(.horizontal, 25)
+                .contentShape(Rectangle())
+                .onTapGesture {
+                    withAnimation(.easeInOut) {
+                        homeData.searchActivated = true
+                    }
+                }
                 
                 Text("Order online\ncollect in store")
                     .font(.custom(Constants.ralewayRegular, size: 28).bold())
@@ -87,9 +89,36 @@ struct Home: View {
         .onChange(of: homeData.productType) { newValue in
             homeData.filterProductByType()
         }
-        .sheet(isPresented: $homeData.showMoreProductsOnType, content: {
+        .sheet(isPresented: $homeData.showMoreProductsOnType) {
             MoreProductsView()
-        })
+        }
+        .overlay(
+            
+            ZStack {
+                if homeData.searchActivated {
+                    SearchView(animation: animation)
+                        .environmentObject(homeData)
+                }
+            }
+        )
+    }
+    
+    @ViewBuilder
+    func searchBar() -> some View {
+        HStack(spacing: 15) {
+            Image(systemName: Constants.magnifyingglass)
+                .font(.title2)
+                .foregroundColor(.gray)
+            
+            TextField("Search", text: .constant(""))
+                .disabled(true)
+        }
+        .padding(.vertical, 12)
+        .padding(.horizontal)
+        .background(
+            Capsule()
+                .strokeBorder(Color.gray, lineWidth: 0.8)
+        )
     }
     
     @ViewBuilder
