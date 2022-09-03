@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 class HomeViewModel: ObservableObject {
     
@@ -43,9 +44,21 @@ class HomeViewModel: ObservableObject {
     // Search data
     @Published var searchText: String = ""
     @Published var searchActivated: Bool = false
+    @Published var searchedProducts: [Product]?
+
+    var searchCancellable: AnyCancellable?
     
     init() {
         filterProductByType()
+        searchCancellable = $searchText.removeDuplicates()
+            .debounce(for: 0.5, scheduler: RunLoop.main)
+            .sink(receiveValue: { str in
+                if str != "" {
+                    self.filterProductBySearch()
+                } else {
+                    self.searchedProducts = nil
+                }
+            })
     }
     
     func filterProductByType() {
@@ -59,6 +72,22 @@ class HomeViewModel: ObservableObject {
                 .prefix(4)
             DispatchQueue.main.async {
                 self.filtredProducts = result.compactMap({ product in
+                    return product
+                })
+            }
+        }
+    }
+
+    func filterProductBySearch() {
+
+        DispatchQueue.global(qos: .userInteractive).async {
+            let result = self.products
+                .lazy
+                .filter { product in
+                    return product.title.lowercased().contains(self.searchText.lowercased())
+                }
+            DispatchQueue.main.async {
+                self.searchedProducts = result.compactMap({ product in
                     return product
                 })
             }
