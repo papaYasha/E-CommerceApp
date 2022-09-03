@@ -18,6 +18,8 @@ struct Constants {
     //MARK: - Home
     static let magnifyingglass = "magnifyingglass"
     static let homeBackground = "HomeBG"
-    
+
+    //MARK: - Profile
+    static let avatarImage = "circleAvatar"
     
 }
