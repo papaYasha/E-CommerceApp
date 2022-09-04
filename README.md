@@ -1,5 +1,5 @@
 # E-CommerceApp
-SwiftUI
+E-commerce connect businesses selling goods and services to individual customers. It includes products catalog with search by title, profile tab, liked position, your cart and home tab with all categorized products.
 
 ## Stack
 * Xcode 13.3.1
