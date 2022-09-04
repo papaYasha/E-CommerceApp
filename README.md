@@ -21,6 +21,6 @@ E-commerce app connect businesses selling goods and services to individual custo
 ![Screenshot 2022-09-04 at 19 49 12](https://user-images.githubusercontent.com/90447243/188325803-707b1ddb-1ab3-4db0-a4d7-7d3c01e22bb2.png)
 
 ## TabView
-![Screenshot 2022-09-04 at 19 49 52](https://user-images.githubusercontent.com/90447243/188325855-606bf68e-353b-4f36-8df1-fba2834d9cb1.png)
+![Screenshot 2022-09-04 at 21 16 39](https://user-images.githubusercontent.com/90447243/188327809-a52472e3-2f0e-40c2-8749-c0506008787c.png)
 
 
