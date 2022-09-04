@@ -66,9 +66,9 @@ struct Profile: View {
                             .background(
                                 Color(Constants.homeBackground).ignoresSafeArea())
                     }
-                    customNavigationLink(title: "Notification") {
+                    customNavigationLink(title: "Notifications") {
                         Text("")
-                            .navigationTitle("Notification")
+                            .navigationTitle("Notifications")
                             .background(
                                 Color(Constants.homeBackground).ignoresSafeArea())
                     }
