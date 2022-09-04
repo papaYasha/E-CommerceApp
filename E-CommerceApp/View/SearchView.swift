@@ -59,7 +59,7 @@ struct SearchView: View {
                             .padding()
                         Text("Item Not Found")
                             .font(.custom(Constants.ralewayRegular, size: 22).bold())
-                        Text("Try more genereic search term or try looking for altrnative products.")
+                        Text("Try more genereic search term or try looking for alternative products.")
                             .font(.custom(Constants.ralewayRegular, size: 16))
                             .foregroundColor(.gray)
                             .multilineTextAlignment(.center)
